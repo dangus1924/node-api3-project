@@ -1,8 +1,6 @@
-// code away!
-const express = require('express')
+const server = require('./server')
 
 
-const logger = require('./middlware/logger')
-
-
-server.use(logger)
+server.listen(4000, () => {
+    console.log("Server running on http://localhost:4000")
+})
