@@ -21,7 +21,7 @@ server.get('/', (req, res) => {
 });
 
 server.use((res, req) => {
-  res.status(404).json({ message: "You have ventured into the abyss!"})
+  res.status(404).json({ message: "Wrong turn!!"})
 })
 
 server.use((err, req, res, next) => {

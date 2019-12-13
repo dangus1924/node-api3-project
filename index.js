@@ -1,6 +1,8 @@
 const server = require('./server')
 
+const host = process.env.HOST || "0.0.0.0"
+const port = process.env.PORT || 4000
 
-server.listen(4000, () => {
-    console.log("Server running on http://localhost:4000")
+server.listen(port, host, () => {
+    console.log(`Running at http://${host}:${port}`)
 })
